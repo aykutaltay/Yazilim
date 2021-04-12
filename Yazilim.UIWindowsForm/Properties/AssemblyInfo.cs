@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Yazilim.Test")]
+[assembly: AssemblyTitle("Yazilim.UIWindowsForm")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Yazilim.Test")]
+[assembly: AssemblyProduct("Yazilim.UIWindowsForm")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("d8e7c1af-09a1-492a-bafb-34e142b419a4")]
+[assembly: Guid("12a3b7cc-6a9f-4ab5-878b-4b1c607543f6")]
 
 // Version information for an assembly consists of the following four values:
 //

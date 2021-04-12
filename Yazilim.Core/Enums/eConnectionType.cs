@@ -8,10 +8,13 @@ namespace Yazilim.Core
 {
     public enum eConnectionType
     {
-        CubeConnection = 1,
-        KPConnection = 2,
-        LogSqliteConnection = 3,
-        LogMssqlConnection = 4
+        
+        LogSqliteConnection = 1,
+        LogMssqlConnection = 2,
+        MysqlConnection = 3,
+        PostgreSQL= 4
+
+
 
     }
 }

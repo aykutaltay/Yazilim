@@ -8,7 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Yazilim.Core;
-namespace Yazilim.Test
+using Yazilim.Entities;
+
+
+namespace Yazilim.UIWindowsForm
 {
     public partial class Form1 : Form
     {
@@ -17,16 +20,31 @@ namespace Yazilim.Test
             InitializeComponent();
         }
 
+
+        #region variable
+
+        #endregion
+
+        #region Events
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+            DbLogger.LogDb("aaa", "aa", "aaa", Core.Enums.eLogType.DELETE);
+
+
+        }
+
+
+
+        #endregion
+
+        #region Methods
+
+        #endregion
+
         private void button1_Click(object sender, EventArgs e)
         {
             DbLogger.LogDb("aaa", "aa", "aaa", Core.Enums.eLogType.DELETE);
-            using (var db=new Core.DbTools.Repository(eConnectionType.LogSqliteConnection))
-            {
-
-             dataGridView1.DataSource=db.GetAll<Entities.Log.Logs>();
-
-            }
-
         }
     }
 }

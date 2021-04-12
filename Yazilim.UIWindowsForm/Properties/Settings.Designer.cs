@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Yazilim.Test.Properties
+namespace Yazilim.UIWindowsForm.Properties
 {
 
 
