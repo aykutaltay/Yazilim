@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Yazilim.Core;
+using Yazilim.Core.WebApi;
 using Yazilim.Entities;
 
 
@@ -29,7 +30,7 @@ namespace Yazilim.UIWindowsForm
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            DbLogger.LogDb("aaa", "aa", "aaa", Core.Enums.eLogType.DELETE);
+
 
 
         }
@@ -44,7 +45,15 @@ namespace Yazilim.UIWindowsForm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DbLogger.LogDb("aaa", "aa", "aaa", Core.Enums.eLogType.DELETE);
+
+
+         var res= getirAsync();
+
+        }
+
+        private async Task getirAsync()
+        {
+            var Test =  NorthwindApiServices.WebApListAsync<Entities.Northwind.categories>();
         }
     }
 }

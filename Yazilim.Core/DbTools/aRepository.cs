@@ -57,6 +57,17 @@ namespace Yazilim.Core.DbTools
         {
             return dbConnection.GetAll<T>(transaction);
         }
+
+        public IEnumerable<T> Query<T>(string sql, object param = null) where T : class
+        {
+            
+                IEnumerable<T> result = null;
+
+                result = dbConnection.Query<T>(sql, param, transaction, commandTimeout: timeoutSec);
+                return result;
+            
+        }
+
         public T Get<T>(int id) where T : class
         {
             return dbConnection.Get<T>(id, transaction);

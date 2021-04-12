@@ -11,6 +11,9 @@ namespace Yazilim.Core.Enums
         NONE,
         INSERT,
         UPDATE,
-        DELETE
+        DELETE,
+        WebGetAll
+
+
     }
 }
