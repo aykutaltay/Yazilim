@@ -10,7 +10,7 @@ namespace Yazilim.Entities.Northwind
     {
         public string TableName { get; set; }
         public string Key { get; set; }
-
+        public string SubTable { get; set; }
 
     }
 }

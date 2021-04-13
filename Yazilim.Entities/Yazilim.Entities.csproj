@@ -265,7 +265,11 @@
   <ItemGroup>
     <Compile Include="ApiResponse.cs" />
     <Compile Include="Log\Logs.cs" />
-    <Compile Include="Northwind\categories.cs" />
+    <Compile Include="Northwind\Address.cs" />
+    <Compile Include="Northwind\Category.cs" />
+    <Compile Include="Northwind\customers.cs" />
+    <Compile Include="Northwind\Products.cs" />
+    <Compile Include="Northwind\Supplier.cs" />
     <Compile Include="Northwind\WebApiTable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
