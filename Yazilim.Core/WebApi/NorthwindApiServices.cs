@@ -220,12 +220,12 @@ namespace Yazilim.Core.WebApi
             {
 
                 response.Content = entityJson;
-                DbLogger.LogDb("WEB APİ Delete ÇAĞRISI", entityJson, webApiTable.TableName, Core.Enums.eLogType.APIPUT);
+                DbLogger.LogDb("WEB APİ PUT ÇAĞRISI", entityJson, webApiTable.TableName, Core.Enums.eLogType.APIPUT);
             }
             else
             {
                 response.Content = response.Content;
-                DbLogger.LogDb("WEB APİ Delete ÇAĞRISI HATASI ", response.Content, webApiTable.TableName, Core.Enums.eLogType.APIPUT_ERROR);
+                DbLogger.LogDb("WEB APİ PUT ÇAĞRISI HATASI ", response.Content, webApiTable.TableName, Core.Enums.eLogType.APIPUT_ERROR);
             }
 
 
