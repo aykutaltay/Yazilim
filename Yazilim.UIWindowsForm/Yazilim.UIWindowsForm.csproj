@@ -259,23 +259,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="View\UIMenu.cs">
+    <Compile Include="View\UIParent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\UIMenu.Designer.cs">
-      <DependentUpon>UIMenu.cs</DependentUpon>
+    <Compile Include="View\UIParent.Designer.cs">
+      <DependentUpon>UIParent.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="View\UIProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UIProduct.Designer.cs">
+      <DependentUpon>UIProduct.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -285,8 +282,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="View\UIMenu.resx">
-      <DependentUpon>UIMenu.cs</DependentUpon>
+    <EmbeddedResource Include="View\UIParent.resx">
+      <DependentUpon>UIParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UIProduct.resx">
+      <DependentUpon>UIProduct.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

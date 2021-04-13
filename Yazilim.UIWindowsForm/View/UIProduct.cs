@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace Yazilim.UIWindowsForm.View
 {
-    public partial class UIMenu : Form
+    public partial class UIProduct : Form
     {
-        public UIMenu()
+        public UIProduct()
         {
             InitializeComponent();
         }
-
-        
     }
 }

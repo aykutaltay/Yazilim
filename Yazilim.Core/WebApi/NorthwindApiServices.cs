@@ -183,25 +183,13 @@ namespace Yazilim.Core.WebApi
 
             }
 
-
-
-
-
             WebApiTable webApiTable = attr[0] as WebApiTable;
 
-
-
             Type t = entity.GetType();
-
             PropertyInfo[] props = t.GetProperties();
-
             string IdentityValue = "";
-
             //key değerini almak için eklendi
             IdentityValue = props.Where(w => w.Name == webApiTable.Key).Select(q => q.GetValue(entity)).First().ToString();
-
-
-
 
             string urlTableName = URL + webApiTable.TableName + "/" + IdentityValue;
 
