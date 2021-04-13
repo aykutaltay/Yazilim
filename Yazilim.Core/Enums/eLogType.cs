@@ -12,7 +12,14 @@ namespace Yazilim.Core.Enums
         INSERT,
         UPDATE,
         DELETE,
-        WebGetAll
+        APIPOST,
+        APIPOST_ERROR,
+        APIGET,
+        APIGET_ERROR,
+        APIDELETE,
+        APIDELETE_ERROR,
+        APIPUT,
+        APIPUT_ERROR,
 
 
     }

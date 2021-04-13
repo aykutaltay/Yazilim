@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using Yazilim.Core;
 using Yazilim.Core.WebApi;
 using Yazilim.Entities;
-
+using Yazilim.Entities.Northwind;
 
 namespace Yazilim.UIWindowsForm
 {
@@ -47,13 +47,21 @@ namespace Yazilim.UIWindowsForm
         {
 
 
-         var res= getirAsync();
+
+            categories mdl = new categories
+            {
+                id = 2,
+                description = "Sweet and savory sauces relishes spreads and seasonings",
+                name = "Condiments"
+
+
+            };
+
+
+            NorthwindApiServices.Delete<categories>(mdl);
 
         }
 
-        private async Task getirAsync()
-        {
-            var Test =  NorthwindApiServices.WebApListAsync<Entities.Northwind.categories>();
-        }
+
     }
 }
