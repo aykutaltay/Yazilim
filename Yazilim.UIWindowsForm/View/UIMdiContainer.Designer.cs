@@ -34,7 +34,6 @@
             this.categoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.supplierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.shipperToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loglistesiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
             this.GridPanel = new System.Windows.Forms.Panel();
@@ -62,7 +61,6 @@
             this.categoryToolStripMenuItem,
             this.customerToolStripMenuItem,
             this.supplierToolStripMenuItem,
-            this.shipperToolStripMenuItem,
             this.loglistesiToolStripMenuItem});
             this.FORMLAR.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FORMLAR.Name = "FORMLAR";
@@ -74,7 +72,7 @@
             this.productToolStripMenuItem.AccessibleName = "Product";
             this.productToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.productToolStripMenuItem.Name = "productToolStripMenuItem";
-            this.productToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.productToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.productToolStripMenuItem.Tag = "1";
             this.productToolStripMenuItem.Text = "Product";
             this.productToolStripMenuItem.Click += new System.EventHandler(this.ClickEvents);
@@ -84,7 +82,7 @@
             this.categoryToolStripMenuItem.AccessibleName = "Category";
             this.categoryToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.categoryToolStripMenuItem.Name = "categoryToolStripMenuItem";
-            this.categoryToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.categoryToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.categoryToolStripMenuItem.Tag = "2";
             this.categoryToolStripMenuItem.Text = "Category";
             this.categoryToolStripMenuItem.Click += new System.EventHandler(this.ClickEvents);
@@ -94,7 +92,7 @@
             this.customerToolStripMenuItem.AccessibleName = "Customer";
             this.customerToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
-            this.customerToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.customerToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.customerToolStripMenuItem.Tag = "3";
             this.customerToolStripMenuItem.Text = "Customer";
             this.customerToolStripMenuItem.Click += new System.EventHandler(this.ClickEvents);
@@ -104,27 +102,17 @@
             this.supplierToolStripMenuItem.AccessibleName = "Supplier";
             this.supplierToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.supplierToolStripMenuItem.Name = "supplierToolStripMenuItem";
-            this.supplierToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.supplierToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.supplierToolStripMenuItem.Tag = "4";
             this.supplierToolStripMenuItem.Text = "Supplier";
             this.supplierToolStripMenuItem.Click += new System.EventHandler(this.ClickEvents);
-            // 
-            // shipperToolStripMenuItem
-            // 
-            this.shipperToolStripMenuItem.AccessibleName = "Shipper";
-            this.shipperToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.shipperToolStripMenuItem.Name = "shipperToolStripMenuItem";
-            this.shipperToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.shipperToolStripMenuItem.Tag = "5";
-            this.shipperToolStripMenuItem.Text = "Shipper";
-            this.shipperToolStripMenuItem.Click += new System.EventHandler(this.ClickEvents);
             // 
             // loglistesiToolStripMenuItem
             // 
             this.loglistesiToolStripMenuItem.AccessibleName = "Loglistesi";
             this.loglistesiToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.loglistesiToolStripMenuItem.Name = "loglistesiToolStripMenuItem";
-            this.loglistesiToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.loglistesiToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.loglistesiToolStripMenuItem.Tag = "6";
             this.loglistesiToolStripMenuItem.Text = "Loglistesi";
             this.loglistesiToolStripMenuItem.Click += new System.EventHandler(this.ClickEvents);
@@ -150,6 +138,7 @@
             // 
             // DataListesi
             // 
+            this.DataListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataListesi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataListesi.Location = new System.Drawing.Point(0, 0);
             this.DataListesi.Name = "DataListesi";
@@ -184,7 +173,6 @@
         private System.Windows.Forms.ToolStripMenuItem categoryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem customerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem supplierToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem shipperToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loglistesiToolStripMenuItem;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel GridPanel;

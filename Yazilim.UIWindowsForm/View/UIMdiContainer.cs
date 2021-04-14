@@ -98,12 +98,16 @@ namespace Yazilim.UIWindowsForm.View
 
                 case "Loglistesi":
 
+                    var frm = new UILog();
+                    frm.Show();
 
                     break;
 
                 default:
                     throw new ArgumentNullException("Seçim hatalı");
             }
+
+
 
 
 

@@ -10,11 +10,15 @@ using System.Windows.Forms;
 
 namespace Yazilim.UIWindowsForm.View
 {
-    public partial class UIProduct : Form
+    public partial class UILog : Form
     {
-        public UIProduct()
+        public UILog()
         {
             InitializeComponent();
         }
+
+
+
+
     }
 }
