@@ -317,6 +317,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>MsDBLogs.mdf</DependentUpon>
     </Content>
+    <Content Include="Proje.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Yazilim.Entities\Yazilim.Entities.csproj">

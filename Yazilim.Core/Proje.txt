@@ -1,0 +1,59 @@
+
+---proje veritabanı bağlantısını Dapper micro orm ile IDBConnection ile sağlandı
+--Proje genel Olarak modelli çalışma yapılmıştır.
+
+
+
+- Log Library
+
+* ADO.NET teknolojisi kullanılır
+
+* Log kayıtları SQL komutları ile veritabanına oluşturulur ve sorgulanır
+
+* En az iki farklı RDMS (MS Sql Server, Oracle, PostgreSQL, SQLite) implementasyonuna sahiptir
+
+* Inject edilen implementasyona göre veritabanı bağlantısı ve sql işlemleri yapılır
+
+ 
+
+- Web API
+
+* Json formatında veri alışverişi yapar
+
+* Order, Product, Category, Customer, Supplier, Shipper ve Employee model işlemleri için metotlar içerir
+
+* API çağrı detay ve sonuçları log kütüphanesi ile loglanır
+
+* Gelen çağrılar https://northwind.now.sh adresindeki ilgili servislere yönlendirilir
+
+ 
+
+- Application
+
+* En az iki farklı UI (WindowsForms, Wpf, Uwp, Web) implementasyonuna sahiptir
+
+* Order, Product, Category, Customer, Supplier, Shipper ve Employee kayıtlarının listeleme ve CRUD işlemleri yapılır
+
+* İlgili işlemler Web API katmanına yapılan http çağrıları aracılığıyla gerçekleştirilir
+
+ 
+
+Northwind Api Endpointleri:
+
+ 
+
+https://northwind.now.sh/api/orders
+
+https://northwind.now.sh/api/products
+
+https://northwind.now.sh/api/categories
+
+https://northwind.now.sh/api/customers
+
+https://northwind.now.sh/api/suppliers
+
+https://northwind.now.sh/api/shippers
+
+https://northwind.now.sh/api/employess
+
+ 
