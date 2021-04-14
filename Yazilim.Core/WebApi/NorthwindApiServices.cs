@@ -40,7 +40,12 @@ namespace Yazilim.Core.WebApi
             if (response.IsSuccessful)
             {
                 result.Content = response.Content;
-                DbLogger.LogDb("WEB APİ ÇAĞRISI", result, webApiTable.TableName, Core.Enums.eLogType.APIGET);
+
+                // geri dönüşler problem olduuğudan dayı eklendi
+                var Logsonuc = JsonConvert.SerializeObject(JsonConvert.DeserializeObject<T[]>(result.Content));
+
+
+                DbLogger.LogDb("WEB APİ ÇAĞRISI", Logsonuc, webApiTable.TableName, Core.Enums.eLogType.APIGET);
             }
             else
             {
@@ -52,7 +57,6 @@ namespace Yazilim.Core.WebApi
             return result;
 
         }
-
         public static ApiResponse Post<T>(T entity) where T : class, new()
         {
 
@@ -99,8 +103,6 @@ namespace Yazilim.Core.WebApi
 
             return result;
         }
-
-
         public static ApiResponse Delete<T>(T entity) where T : class, new()
         {
 
@@ -154,6 +156,8 @@ namespace Yazilim.Core.WebApi
             {
 
                 response.Content = entityJson;
+                result.Content = "silme işlemi yapıldı";
+
                 DbLogger.LogDb("WEB APİ Delete ÇAĞRISI", entityJson, webApiTable.TableName, Core.Enums.eLogType.APIDELETE);
             }
             else
@@ -165,8 +169,6 @@ namespace Yazilim.Core.WebApi
 
             return result;
         }
-
-
         public static ApiResponse PUT<T>(T entity) where T : class, new()
         {
 
@@ -208,6 +210,8 @@ namespace Yazilim.Core.WebApi
             {
 
                 response.Content = entityJson;
+                result.Content = "Düzenleme İşlemi Yapıldı";
+                
                 DbLogger.LogDb("WEB APİ PUT ÇAĞRISI", entityJson, webApiTable.TableName, Core.Enums.eLogType.APIPUT);
             }
             else

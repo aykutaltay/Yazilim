@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.FORMLAR = new System.Windows.Forms.ToolStripMenuItem();
             this.productToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,10 +39,13 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.GridPanel = new System.Windows.Forms.Panel();
             this.DataListesi = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.silToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.GridPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataListesi)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -129,6 +133,7 @@
             // 
             // GridPanel
             // 
+            this.GridPanel.ContextMenuStrip = this.contextMenuStrip1;
             this.GridPanel.Controls.Add(this.DataListesi);
             this.GridPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GridPanel.Location = new System.Drawing.Point(0, 33);
@@ -140,10 +145,28 @@
             // 
             this.DataListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataListesi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DataListesi.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.DataListesi.Location = new System.Drawing.Point(0, 0);
             this.DataListesi.Name = "DataListesi";
             this.DataListesi.Size = new System.Drawing.Size(1247, 691);
             this.DataListesi.TabIndex = 0;
+            this.DataListesi.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DataListesi_CellMouseUp);
+            this.DataListesi.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataListesi_CellValueChanged);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.silToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(95, 30);
+            // 
+            // silToolStripMenuItem
+            // 
+            this.silToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.silToolStripMenuItem.Name = "silToolStripMenuItem";
+            this.silToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.silToolStripMenuItem.Text = "Sil";
+            this.silToolStripMenuItem.Click += new System.EventHandler(this.silToolStripMenuItem_Click);
             // 
             // UIMdiContainer
             // 
@@ -161,6 +184,7 @@
             this.panel2.PerformLayout();
             this.GridPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataListesi)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -177,5 +201,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel GridPanel;
         private System.Windows.Forms.DataGridView DataListesi;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem silToolStripMenuItem;
     }
 }

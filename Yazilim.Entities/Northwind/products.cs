@@ -9,11 +9,11 @@ namespace Yazilim.Entities.Northwind
 {
 
     //Reflection ile başlık bilgileri alınacak
-    [WebApiTable(TableName = "products", Key = "id")]
+    [WebApiTable(TableName = "products", Key = "Id")]
     public  class Products
     {
 
-        [JsonProperty("id")]
+        [JsonProperty("Id")]
         public long Id { get; set; }
 
         [JsonProperty("supplierId")]

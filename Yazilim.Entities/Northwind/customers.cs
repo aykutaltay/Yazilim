@@ -12,7 +12,7 @@ namespace Yazilim.Entities.Northwind
     [WebApiTable(TableName = "customers", Key = "Id", SubTable = "Address")]
     public class Customers
     {
-        [JsonProperty("id")]
+        [JsonProperty("Id")]
         public string Id { get; set; }
 
         [JsonProperty("companyName")]

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Yazilim.Entities.Northwind
 {
-    [WebApiTable(TableName = "suppliers", Key = "id", SubTable = "Address")]
+    [WebApiTable(TableName = "suppliers", Key = "Id", SubTable = "Address")]
     public class Supplier
     {
         [JsonProperty("id")]

@@ -9,7 +9,7 @@ namespace Yazilim.Entities.Northwind
 {
 
     //Reflection ile başlık bilgileri alınacak
-    [WebApiTable(TableName = "categories", Key = "id")]
+    [WebApiTable(TableName = "categories", Key = "Id")]
     public class Category
     {
         [JsonProperty("id")]
